@@ -85,7 +85,9 @@ export const projects: Project[] = [
     id: 'project-three',
     slug: 'api-integration-app',
     title: 'Vurlogic Website',
-    description: 'This is a corporate website for Vurlogic, showcasing the company’s technology, power, infrastructure, and digital solutions while providing visitors with information about its services, expertise, and business offerings.',
+
+    description: 'This is a corporate website for Vurlogic, showcasing the company’s technology, power, infrastructure, and digital solutions, providing visitors with information about its services.',
+
     summary: 'A frontend built with react, focused on responsive layouts and state.',
     image: vurwebs,
     technologies: ['React', 'TypeScript', 'Tailwind CSS', ],
