@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --color-base: 250 250 249;
+    --color-base-raised: 255 255 255;
+    --color-base-overlay: 244 244 243;
+    --color-ink: 24 24 27;
+    --color-ink-muted: 82 82 91;
+    --color-ink-faint: 161 161 170;
+    --color-line: 226 226 223;
+    --color-line-strong: 199 199 196;
+    --color-accent: 217 87 33;
+    --color-accent-ink: 255 255 255;
+    --color-signal-blue: 37 99 235;
+    --color-signal-green: 21 128 61;
+  }
+
+  .dark {
+    color-scheme: dark;
+    --color-base: 9 9 11;
+    --color-base-raised: 16 16 18;
+    --color-base-overlay: 22 22 25;
+    --color-ink: 237 237 240;
+    --color-ink-muted: 161 161 170;
+    --color-ink-faint: 82 82 91;
+    --color-line: 39 39 42;
+    --color-line-strong: 63 63 70;
+    --color-accent: 255 122 69;
+    --color-accent-ink: 12 9 7;
+    --color-signal-blue: 96 165 250;
+    --color-signal-green: 74 222 128;
+  }
+
+  * {
+    @apply border-line;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-base text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: rgb(var(--color-accent) / 0.28);
+    color: rgb(var(--color-ink));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-accent));
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-base;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-line-strong;
+    border-radius: 999px;
+    border: 2px solid rgb(var(--color-base));
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(var(--color-ink-faint));
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-10;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
