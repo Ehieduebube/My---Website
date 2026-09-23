@@ -1,32 +1,48 @@
-# React + TypeScript + Vite
+# Ehiedu Ebube — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+My personal portfolio website, built to showcase who I am as a frontend developer and the projects I've shipped.
 
-Currently, two official plugins are available:
+Live at: _add your deployed URL here_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Home, Projects, and individual project detail pages
+- Filterable/searchable project grid
+- Command palette (⌘K / Ctrl+K)
+- Light/dark theme with system preference detection
+- Per-page SEO (title + meta tags)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech stack
 
-## Expanding the Oxlint configuration
+- [React 19](https://react.dev) + [TypeScript](https://www.typescriptlang.org)
+- [Vite](https://vite.dev) for dev/build tooling
+- [React Router](https://reactrouter.com) for routing
+- [Tailwind CSS](https://tailwindcss.com) for styling
+- [Framer Motion](https://motion.dev) for animation
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Getting started
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Other scripts:
+
+```bash
+npm run build    # type-check and build for production
+npm run preview  # preview the production build locally
+npm run lint     # run oxlint
+```
+
+## Project structure
+
+```
+src/
+  components/   UI, layout, navigation, and section components
+  data/         profile, experience, skills, and project content
+  pages/        Home, Projects, ProjectDetail, NotFound
+  lib/          shared utilities (SEO helper, etc.)
+```
+
+To add a new project, edit [`src/data/projects.ts`](src/data/projects.ts) — the home page and projects page pick it up automatically.
