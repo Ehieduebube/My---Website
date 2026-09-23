@@ -2,7 +2,6 @@
 
 My personal portfolio website, built to showcase who I am as a frontend developer and the projects I've shipped.
 
-Live at: _add your deployed URL here_
 
 ## Features
 
