@@ -2,6 +2,9 @@ import type { Project } from '@/types/project'
 import pulseops from '../assets/pulseops.png';
 import clientflo from '../assets/clientflo.png';
 import vurwebs from '../assets/vurwebs.png';
+import stockpilot1 from '../assets/stockpilot1.png';
+import stockpilot2 from '../assets/stockpilot2.png';
+
 
 /**
  * All project data lives here, separate from any UI component.
@@ -59,7 +62,7 @@ export const projects: Project[] = [
 
     image: clientflo,
 
-    technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Tailwind CSS','Neon'],
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     category: ['Next.js', 'TypeScript', 'Full Stack'],
     featured: true,
     year: '2026',
@@ -81,7 +84,46 @@ export const projects: Project[] = [
       learnings:
       'Learned how to structure a full-stack application around shared data and build frontend states for loading, errors, empty results, and successful updates.'
   },
-  {
+   {
+    id: 'project-four',
+    slug: 'stockpilot-inventory-management',
+    title: 'StockPilot - Inventory management Web App',
+
+    description: 'A full-stack inventory management application for tracking products, stock levels, sales, and inventory activity through a simple, intuitive dashboard.',
+
+    summary: 'A full-stack inventory management app built with Next.js, featuring product tracking, stock management, and a responsive dashboard.',
+
+    image: stockpilot1,
+    images: [stockpilot2],
+
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Neon', ],
+
+    category: ['Next.js', 'Full Stack'],
+
+    featured: true,
+    year: '2026',
+    role: 'Frontend Developer',
+    githubUrl: 'https://github.com/Ehieduebube/StockPilot---Inventory-management-Web-App',
+    
+    liveUrl: 'https://stock-pilot-inventory-management-we.vercel.app/',
+
+    problem: 'Managing products, stock levels, and inventory activity can become difficult when information is scattered or tracked manually.',
+
+    solution:  'I built a full-stack inventory management application with a responsive dashboard that allows users to manage products, monitor stock levels, and keep inventory information organized.',
+
+
+    keyFeatures: [
+    'Product and inventory management.',
+    'Dashboard for monitoring stock and inventory activity.',
+    'Responsive interface for desktop, tablet, and mobile.',
+    'Database integration for storing and managing inventory data.',
+    ],
+
+    challenges: 'Creating a simple and intuitive interface for managing inventory data while keeping the application responsive and the data flow organized.',
+
+    learnings: 'I strengthened my understanding of building full-stack applications with Next.js, working with PostgreSQL databases, and connecting frontend interfaces with backend functionality.',
+  },
+   {
     id: 'project-three',
     slug: 'api-integration-app',
     title: 'Vurlogic Website',
@@ -110,6 +152,8 @@ export const projects: Project[] = [
     challenges: 'Creating a professional layout that could present different technology and infrastructure services without making the website feel crowded.',
     learnings: 'I learned how to structure complex business information into a simple, clear, and user-friendly website.',
   },
+
+ 
 ]
 
 export const featuredProjects = projects.filter((project) => project.featured)

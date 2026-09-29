@@ -12,6 +12,7 @@ export interface Project extends ProjectLink {
   description: string
   summary: string
   image?: string
+  images?: string[]
   technologies: string[]
   category: ProjectCategory[]
   featured?: boolean

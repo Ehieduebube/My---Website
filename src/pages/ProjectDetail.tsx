@@ -74,19 +74,37 @@ export function ProjectDetail() {
           </Reveal>
         </div>
 
-        <Reveal delay={0.1} className="mt-10 overflow-hidden rounded-lg border border-line">
-          <div className="aspect-[16/9] w-full">
-            {project.image ? (
-              <img
-                src={project.image}
-                alt={`Preview of ${project.title}`}
-                className="h-full w-full object-cover"
-              />
-            ) : (
-              <ProjectImagePlaceholder title={project.title} />
-            )}
-          </div>
-        </Reveal>
+        {(() => {
+          const gallery = project.images ?? (project.image ? [project.image] : [])
+
+          if (gallery.length === 0) {
+            return (
+              <Reveal delay={0.1} className="mt-10 overflow-hidden rounded-lg border border-line">
+                <div className="aspect-[16/9] w-full">
+                  <ProjectImagePlaceholder title={project.title} />
+                </div>
+              </Reveal>
+            )
+          }
+
+          return (
+            <div className="mt-10 space-y-4">
+              {gallery.map((src, index) => (
+                <Reveal
+                  key={src}
+                  delay={0.1 + index * 0.05}
+                  className="overflow-hidden rounded-lg border border-line"
+                >
+                  <img
+                    src={src}
+                    alt={`Preview ${index + 1} of ${project.title}`}
+                    className="w-full"
+                  />
+                </Reveal>
+              ))}
+            </div>
+          )
+        })()}
 
         <div className="mt-14 grid grid-cols-1 gap-12 lg:grid-cols-[1fr_320px]">
           <div className="space-y-12">
