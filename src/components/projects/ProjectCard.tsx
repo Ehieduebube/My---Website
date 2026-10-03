@@ -16,13 +16,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
       to={`/projects/${project.slug}`}
       className="group relative flex flex-col overflow-hidden rounded-lg border border-line bg-base-raised transition-colors duration-300 ease-snappy hover:border-line-strong"
     >
-      <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-line">
+      <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-line bg-base-overlay">
         {project.image ? (
           <img
             src={project.image}
             alt={`Screenshot of ${project.title}`}
             loading="lazy"
-            className="h-full w-full object-cover transition-transform duration-500 ease-snappy group-hover:scale-105"
+            className="h-full w-full object-contain transition-transform duration-500 ease-snappy group-hover:scale-105"
           />
         ) : (
           <div className="transition-transform duration-500 ease-snappy group-hover:scale-105">

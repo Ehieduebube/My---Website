@@ -1,4 +1,4 @@
-export type ProjectCategory = 'React' | 'TypeScript' | 'Next.js' | 'Full Stack' | 'UI/Frontend'
+export type ProjectCategory = 'React' | 'TypeScript' | 'Next.js' | 'Full Stack' | 'UI/Frontend' | 'Game Development'
 
 export interface ProjectLink {
   githubUrl?: string

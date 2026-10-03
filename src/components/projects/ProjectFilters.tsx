@@ -11,6 +11,7 @@ const CATEGORIES: (ProjectCategory | 'All')[] = [
   'Next.js',
   'Full Stack',
   'UI/Frontend',
+  'Game Development',
 ]
 
 interface ProjectFiltersProps {

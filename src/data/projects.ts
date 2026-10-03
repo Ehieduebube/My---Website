@@ -4,6 +4,7 @@ import clientflo from '../assets/clientflo.png';
 import vurwebs from '../assets/vurwebs.png';
 import stockpilot1 from '../assets/stockpilot1.png';
 import stockpilot2 from '../assets/stockpilot2.png';
+import neonrun from '../assets/neonrun.png'; 
 
 
 /**
@@ -50,6 +51,10 @@ export const projects: Project[] = [
     learnings:
       'Learned to plan the data flow earlier and keep state management simple as the app grows.',
   },
+
+
+
+
   
   {
     id: 'project-two',
@@ -84,6 +89,11 @@ export const projects: Project[] = [
       learnings:
       'Learned how to structure a full-stack application around shared data and build frontend states for loading, errors, empty results, and successful updates.'
   },
+
+
+
+
+
    {
     id: 'project-four',
     slug: 'stockpilot-inventory-management',
@@ -123,6 +133,48 @@ export const projects: Project[] = [
 
     learnings: 'I strengthened my understanding of building full-stack applications with Next.js, working with PostgreSQL databases, and connecting frontend interfaces with backend functionality.',
   },
+
+
+  {
+    id: 'project-two',
+    slug: 'neonrun',
+    title: 'Neon Run Web-Game',
+
+    description: 'A fast-paced browser game where players navigate obstacles, collect points, and try to achieve the highest score.',
+
+    summary: 'A responsive web-based arcade game built for quick, engaging gameplay, featuring increasing difficulty, score tracking, and keyboard and touch controls.',
+
+    image: neonrun,
+
+    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
+    category: ['React', 'TypeScript','Game Development' ],
+    featured: true,
+    year: '2026',
+    role: 'Frontend Developer',
+    githubUrl: 'https://github.com/Ehieduebube/Neon-Run',
+
+    liveUrl: 'https://neon-run-web-game.vercel.app/',
+
+    problem: 'I wanted to build a browser game that was simple to understand, fun to play, and responsive across both desktop and mobile devices.',
+
+    solution: 'Built a responsive arcade-style game with real-time gameplay, obstacle detection, score tracking, increasing difficulty, and controls optimized for both keyboard and touch devices.',
+
+    keyFeatures: [
+        'Fast-paced gameplay with obstacles, scoring, and increasing difficulty.',
+        'Responsive controls supporting keyboard and mobile touch interactions.',
+        'Score tracking with game-over and restart states for quick replay.'
+    ],
+
+    challenges:
+        'Keeping the gameplay responsive while handling movement, collision detection, scoring, and increasing difficulty without making the experience feel laggy.',
+
+    learnings:
+        'Learned how to manage real-time game state in React, handle user input across different devices, and structure game logic for smooth browser-based gameplay.'
+},
+
+
+
+
    {
     id: 'project-three',
     slug: 'api-integration-app',
