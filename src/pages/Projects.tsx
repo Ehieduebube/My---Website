@@ -38,7 +38,7 @@ export function Projects() {
             Everything I've built
           </h1>
           <p className="mt-4 max-w-xl text-balance text-lg text-ink-muted">
-            A running collection of projects — dashboards, form-heavy tools, and API-driven
+            A running collection of projects - dashboards, form-heavy tools, and API-driven
             interfaces. Filter by stack or search by name.
           </p>
         </Reveal>

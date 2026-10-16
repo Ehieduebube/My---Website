@@ -14,7 +14,7 @@ export function Home() {
   const location = useLocation()
 
   useSeo({
-    title: `${profile.name} — ${profile.role}`,
+    title: `${profile.name} - ${profile.role}`,
     description: profile.tagline,
   })
 

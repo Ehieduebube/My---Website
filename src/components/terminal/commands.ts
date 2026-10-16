@@ -56,7 +56,7 @@ export const commands: Record<string, CommandDef> = {
     run: (_args, ctx) => goto('/#home', ctx, ['returning home...']),
   },
   theme: {
-    description: 'theme [dark|light] — switch color theme',
+    description: 'theme [dark|light] - switch color theme',
     run: (args, ctx) => {
       const value = args[0]
       if (value === 'dark' || value === 'light') {
@@ -70,7 +70,7 @@ export const commands: Record<string, CommandDef> = {
     description: 'print a short bio',
     run: () => ({
       lines: [
-        'frontend developer — react, typescript, next.js, tailwind css.',
+        'frontend developer - react, typescript, next.js, tailwind css.',
         'building clean, responsive, interactive web experiences.',
       ],
     }),

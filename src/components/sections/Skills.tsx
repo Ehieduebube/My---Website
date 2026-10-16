@@ -16,7 +16,7 @@ export function Skills() {
         <SectionHeading
           index="02"
           title="Technologies"
-          description="Frontend is where I spend most of my time — with enough backend fluency to work across a full stack when a project needs it."
+          description="Frontend is where I spend most of my time - with enough backend fluency to work across a full stack when a project needs it."
         />
 
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1.3fr_1fr]">

@@ -7,7 +7,7 @@ interface SeoOptions {
   description: string
 }
 
-const SITE_NAME = `${profile.name} — ${profile.role}`
+const SITE_NAME = `${profile.name} - ${profile.role}`
 
 function setMetaTag(attr: 'name' | 'property', key: string, content: string) {
   let el = document.querySelector<HTMLMetaElement>(`meta[${attr}="${key}"]`)
@@ -25,7 +25,7 @@ function setMetaTag(attr: 'name' | 'property', key: string, content: string) {
  */
 export function useSeo({ title, description }: SeoOptions) {
   useEffect(() => {
-    const fullTitle = title === SITE_NAME ? title : `${title} — ${SITE_NAME}`
+    const fullTitle = title === SITE_NAME ? title : `${title} - ${SITE_NAME}`
     document.title = fullTitle
     setMetaTag('name', 'description', description)
     setMetaTag('property', 'og:title', fullTitle)

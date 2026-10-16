@@ -11,7 +11,7 @@ export const profile = {
   location: 'Available for work',
   tagline: 'I build responsive, interactive web experiences with React and TypeScript.',
   bio: [
-    "I'm a frontend developer who spends most of my time in React and TypeScript, turning designs and requirements into interfaces that actually hold up in production — not just in a demo.",
+    "I'm a frontend developer who spends most of my time in React and TypeScript, turning designs and requirements into interfaces that actually hold up in production - not just in a demo.",
     'I care about the details most users never consciously notice: components that stay predictable as an app grows, layouts that hold together across breakpoints, and interactions that respond the way people expect them to.',
     "Most of my work has been dashboards, form-heavy tools and API-driven products, so I've spent a lot of time thinking about state, data fetching and how to keep a UI honest about what's actually happening behind it.",
   ],

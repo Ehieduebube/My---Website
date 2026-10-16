@@ -22,7 +22,7 @@ export const projects: Project[] = [
   {
     id: 'project-one',
     slug: 'dashboard-ui',
-    title: 'PulseOps — Incident & Service Monitoring Dashboard',
+    title: 'PulseOps - Incident & Service Monitoring Dashboard',
     description:
       'A modern incident and service monitoring dashboard built for engineering teams to track system health, manage incidents, and monitor reliability.',
     summary:

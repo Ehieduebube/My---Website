@@ -69,7 +69,7 @@ export function Contact() {
                 </motion.div>
                 <p className="mt-4 font-medium text-ink">Message noted.</p>
                 <p className="mt-1 max-w-xs text-sm text-ink-muted">
-                  This form doesn't send to a backend yet — for now, please reach out directly via
+                  This form doesn't send to a backend yet - for now, please reach out directly via
                   email.
                 </p>
               </div>

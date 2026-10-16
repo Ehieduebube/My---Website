@@ -14,7 +14,7 @@ export function ProjectImagePlaceholder({ title }: ProjectImagePlaceholderProps)
           preview coming soon
         </span>
       </div>
-      <span className="sr-only">{title} — preview image not yet available</span>
+      <span className="sr-only">{title} - preview image not yet available</span>
     </div>
   )
 }

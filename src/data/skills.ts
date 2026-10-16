@@ -12,7 +12,7 @@ export const skillGroups: SkillGroup[] = [
       {
         name: 'React',
         description: 'Component-driven UIs with hooks and modern patterns.',
-        usage: 'My primary tool for building interfaces — from dashboards to marketing pages.',
+        usage: 'My primary tool for building interfaces - from dashboards to marketing pages.',
       },
       {
         name: 'TypeScript',
@@ -32,7 +32,7 @@ export const skillGroups: SkillGroup[] = [
       {
         name: 'Tailwind CSS',
         description: 'Utility-first styling with a consistent design system.',
-        usage: 'My default for styling — including the site you are looking at.',
+        usage: 'My default for styling - including the site you are looking at.',
       },
     ],
   },
@@ -74,7 +74,7 @@ export const skillGroups: SkillGroup[] = [
       {
         name: 'Git & GitHub',
         description: 'Version control, branching workflows, pull requests.',
-        usage: 'Daily — for every project, solo or collaborative.',
+        usage: 'Daily - for every project, solo or collaborative.',
       },
       {
         name: 'Docker',
