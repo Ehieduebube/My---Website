@@ -5,6 +5,7 @@ import vurwebs from '../assets/vurwebs.png';
 import stockpilot1 from '../assets/stockpilot1.png';
 import stockpilot2 from '../assets/stockpilot2.png';
 import neonrun from '../assets/neonrun.png'; 
+import branda from '../assets/branda.png'; 
 
 
 /**
@@ -108,7 +109,7 @@ export const projects: Project[] = [
 
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Neon', ],
 
-    category: ['Next.js', 'Full Stack'],
+    category: ['Next.js', 'TypeScript', 'Full Stack'],
 
     featured: true,
     year: '2026',
@@ -134,9 +135,49 @@ export const projects: Project[] = [
     learnings: 'I strengthened my understanding of building full-stack applications with Next.js, working with PostgreSQL databases, and connecting frontend interfaces with backend functionality.',
   },
 
+  
+{
+    id: 'project-five',
+    slug: 'branda-v2',
+    title: 'Branda V2 - Branding Ecosystem',
+
+    description: 'A multi-market branding platform that brings digital services, gifts, creative solutions, studio services, and print products together in one seamless experience.',
+
+    summary: 'A responsive branding ecosystem built with Next.js, React, TypeScript, and Tailwind CSS, designed to serve customers across Nigeria, the USA, the UK, and Canada with market-specific experiences, service discovery, and streamlined ordering.',
+
+    image: branda,
+
+    technologies: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS'],
+    category: ['Next.js', 'TypeScript', 'E-commerce',],
+    featured: true,
+    year: '2026',
+    role: 'Frontend Developer',
+
+    githubUrl: 'https://github.com/Ehieduebube/Branda-v2',
+    liveUrl: 'https://branda-v2-weld.vercel.app/ng',
+
+    problem: 'Businesses and individuals need a simple way to discover and access different branding services without navigating multiple disconnected platforms. The challenge was to create a unified experience that also supports different markets and their requirements.',
+
+    solution: 'Built a responsive branding ecosystem using Next.js App Router, React, TypeScript, and Tailwind CSS. Structured the platform around five core categories: Digital, Gifts, Create, Studio, and Prints, with market-specific routes, reusable components, and SEO-focused rendering.',
+
+    keyFeatures: [
+        'Five service categories covering digital solutions, gifts, creative services, studio services, and printing.',
+        'Multi-market architecture supporting Nigeria, the USA, the UK, and Canada.',
+        'Server-rendered pages and SEO-friendly metadata for improved discoverability.',
+        'Responsive layouts and reusable components for a consistent user experience.',
+        'URL-based filtering and dynamic service pages for easier navigation.',
+        'Structured loading, error, and empty states for a more reliable experience.'
+    ],
+
+    challenges: 'Designing a scalable architecture that supports multiple markets, dynamic service pages, SEO requirements, and consistent user experiences while keeping the codebase maintainable.',
+
+    learnings: 'Strengthened my experience with Next.js App Router, server-side rendering, dynamic routing, SEO optimization, reusable component architecture, and building multi-market web applications.'
+},
+
+
 
   {
-    id: 'project-two',
+    id: 'project-six',
     slug: 'neonrun',
     title: 'Neon Run Web-Game',
 
@@ -185,7 +226,7 @@ export const projects: Project[] = [
     summary: 'A frontend built with react, focused on responsive layouts and state.',
     image: vurwebs,
     technologies: ['React', 'TypeScript', 'Tailwind CSS', ],
-    category: ['React', 'UI/Frontend'],
+    category: ['React', 'TypeScript', 'UI/Frontend'],
     featured: true,
     year: '2026',
     role: 'Frontend Developer',

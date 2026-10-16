@@ -12,6 +12,7 @@ const CATEGORIES: (ProjectCategory | 'All')[] = [
   'Full Stack',
   'UI/Frontend',
   'Game Development',
+  'E-commerce',
 ]
 
 interface ProjectFiltersProps {
