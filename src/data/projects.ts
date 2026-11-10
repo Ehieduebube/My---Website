@@ -393,4 +393,4 @@ export const projects: Project[] = [
  
 ]
 
-export const featuredProjects = projects.filter((project) => project.featured)
+export const featuredProjects = projects.filter((project) => project.featured).slice(0, 3)
