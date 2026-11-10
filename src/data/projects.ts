@@ -6,6 +6,11 @@ import stockpilot1 from '../assets/stockpilot1.png';
 import stockpilot2 from '../assets/stockpilot2.png';
 import neonrun from '../assets/neonrun.png'; 
 import branda from '../assets/branda.png'; 
+import downhillRush from '../assets/downhillRush.png'; 
+import foodFrenzyNaija from '../assets/foodFrenzyNaija.png'; 
+import shadowClash from '../assets/shadowClash.png'; 
+
+
 
 
 /**
@@ -246,6 +251,145 @@ export const projects: Project[] = [
     learnings: 'I learned how to structure complex business information into a simple, clear, and user-friendly website.',
   },
 
+  {
+  id: 'project-seven',
+  slug: 'downhill-rush',
+  title: 'Downhill Rush - 3D Skateboarding Game',
+
+  description:
+    'A 3D endless skateboarding game where players race downhill, dodge obstacles, collect coins, and use power-ups while navigating a vibrant coastal environment.',
+
+  summary:
+    'An arcade skateboarding game featuring endless downhill gameplay, animated 3D environments, collectible coins, and power-ups.',
+
+  image: downhillRush,
+
+  technologies: ['React', 'TypeScript', 'Three.js', 'React Three Fiber'],
+
+  category: ['React', 'TypeScript', 'Game Development', ],
+
+  featured: true,
+  year: '2026',
+  role: 'Game Developer',
+
+  githubUrl: 'https://github.com/Ehieduebube/Downhill-Rush---web-game',
+
+  liveUrl: 'https://downhill-rush-web-game.vercel.app/',
+
+  problem:
+    'I wanted to create an engaging browser-based 3D game with smooth controls, immersive visuals, and replayable endless gameplay.',
+
+  solution:
+    'Built a 3D endless skateboarding game featuring a third-person camera, downhill road generation, animated character movement, obstacle avoidance, collectible coins, and temporary power-ups.',
+
+  keyFeatures: [
+    'Endless downhill skateboarding with progressively increasing difficulty.',
+    'Stylized 3D coastal environment with sunset lighting and dynamic scenery.',
+    'Obstacle avoidance, collectible coins, and power-ups.',
+    'Keyboard and mobile touch controls.',
+    'Score tracking, best-score persistence, and restart functionality.',
+  ],
+
+  challenges:
+    'Coordinating character movement, steering, camera follow, collision detection, and endless road generation while keeping gameplay smooth and responsive.',
+
+  learnings:
+    'Improved my understanding of 3D rendering, animation, real-time game state, collision detection, and procedural environment generation.',
+},
+
+
+{
+  id: 'project-eight',
+  slug: 'food-frenzy-naija',
+  title: 'Food Frenzy Naija - Nigerian Food Match Game',
+
+  description:
+    'A fun Nigerian-themed match-3 puzzle game where players match familiar local foods, complete levels, and aim for high scores.',
+
+  summary:
+    'A colorful browser-based puzzle game celebrating Nigerian cuisine through match-3 gameplay, scoring, and progressively challenging levels.',
+
+  image: foodFrenzyNaija,
+
+  technologies: ['React', 'TypeScript', 'Tailwind CSS'],
+
+  category: ['React', 'TypeScript', 'Game Development'],
+
+  featured: true,
+  year: '2026',
+  role: 'Game Developer',
+
+  githubUrl: 'https://github.com/Ehieduebube/Food-Frenzy-Naija---web-game',
+
+  liveUrl: 'https://food-frenzy-naija-web-game.vercel.app/',
+
+  problem:
+    'I wanted to create a simple, entertaining browser game inspired by Nigerian food and familiar match-3 puzzle mechanics.',
+
+  solution:
+    'Built a Nigerian food-themed puzzle game with interactive matching mechanics, score tracking, and a colorful interface designed for accessible browser gameplay.',
+
+  keyFeatures: [
+    'Match-3 gameplay featuring Nigerian food items.',
+    'Interactive board with matching and tile-clearing mechanics.',
+    'Score tracking and gameplay feedback.',
+    'Increasing challenge to encourage replayability.',
+    'Responsive interface for desktop and mobile devices.',
+  ],
+
+  challenges:
+    'Implementing reliable tile-matching logic, handling board updates, and keeping the gameplay responsive as matches and animations occur.',
+
+  learnings:
+    'Learned more about grid-based game logic, matching algorithms, animation timing, and managing interactive gameplay state in React.',
+},
+
+
+{
+  id: 'project-nine',
+  slug: 'shadow-clash',
+  title: 'Shadow Clash - Fighting Game',
+
+  description:
+    'An arcade-style fighting game featuring unique characters, special abilities, and fast-paced combat in a visually engaging arena.',
+
+  summary:
+    'A browser-based fighting game focused on character movement, combat mechanics, special abilities, and competitive arcade-style gameplay.',
+
+  image: shadowClash,
+
+  technologies: ['React', 'TypeScript', 'Tailwind CSS'],
+
+  category: ['React', 'TypeScript', 'Game Development'],
+
+  featured: true,
+  year: '2026',
+  role: 'Game Developer',
+
+  githubUrl: 'https://github.com/Ehieduebube/SHADOW-CLASH---Web-Game',
+  
+  liveUrl: 'https://shadow-clash-web-game.vercel.app/',
+
+  problem:
+    'I wanted to explore fighting game development by creating a playable experience with responsive controls, distinct characters, and engaging combat.',
+
+  solution:
+    'Developed a fighting game concept with playable characters, movement controls, attack mechanics, character-specific abilities, and an arena-based combat experience.',
+
+  keyFeatures: [
+    'Multiple playable characters with distinct appearances.',
+    'Movement, attacks, blocking, and combat interactions.',
+    'Unique character abilities and special moves.',
+    'Health tracking and round-based combat.',
+    'Arcade-inspired visuals and responsive controls.',
+  ],
+
+  challenges:
+    'Coordinating player movement, attack timing, hit detection, character animations, and combat states to make fights feel responsive.',
+
+  learnings:
+    'Developed my understanding of real-time input handling, combat state management, collision detection, animation timing, and interactive game design.',
+},
  
 ]
 
